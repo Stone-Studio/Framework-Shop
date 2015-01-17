@@ -7,7 +7,8 @@ class controller {
 	
 	function __construct()
 	{
-		$this->view = new View();
+		$this->view = new view();
+		$this->mode = new model();
 	}
 	
 	// действие (action), вызываемое по умолчанию

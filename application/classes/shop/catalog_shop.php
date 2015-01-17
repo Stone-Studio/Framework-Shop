@@ -1,10 +1,9 @@
 <?php
 
 //by Sergeev
-
 class catalog_shop extends shop {
 
-    function generateProducts($result) {
+    private function generateProducts($result) {
 
         while ($row = mysqli_fetch_array($result)) {
             $id = $row['id'];
@@ -20,12 +19,14 @@ class catalog_shop extends shop {
 
     }
 
-    function generateProductsByCat() {
+    private function generateProductsByCat() {
 
     }
 
-    function generateProduct($product) {
+    private function generateProduct($product) {
 
     }
+
+    //отменено
 
 }

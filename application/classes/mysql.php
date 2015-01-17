@@ -19,16 +19,11 @@ class mysql {
         $result = mysqli_query($dbc, $query);
 
         return $result;
+
+        //TODO
     }
 
     function insert() {
         //TODO
     }
 }
-
-$mysql = new mysql();
-$mysql->base = 'hi';
-$mysql->connect();
-
-$what = '*';
-$table = 'table';

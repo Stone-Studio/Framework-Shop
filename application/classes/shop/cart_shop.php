@@ -16,6 +16,8 @@ class cart_shop extends shop {
 
     function generateCart() {
             $busket = $_SESSION['BUSKET'];
+
+            return $busket;
     }
 
     function addToCart() {

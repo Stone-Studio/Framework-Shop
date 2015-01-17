@@ -21,4 +21,6 @@ class final_shop extends shop {
         mysqli_query($this->dbc, $queryOrder) or die ('Ошибка:' . mysqli_error($this->dbc));
 
     }
+
+    //TODO
 }
