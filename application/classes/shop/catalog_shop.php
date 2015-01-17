@@ -1,5 +1,7 @@
 <?php
 
+//by Sergeev
+
 class catalog_shop extends shop {
 
     function generateProducts($result) {

@@ -1,5 +1,5 @@
 <?php
-
+//by Sergeev
 class string {
 
     function explodeRequest($string) {

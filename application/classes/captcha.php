@@ -1,5 +1,5 @@
 <?php
-
+//by Sergeev
 class captcha
 {
 

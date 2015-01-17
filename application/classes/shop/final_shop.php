@@ -1,5 +1,7 @@
 <?php
 
+//by Sergeev
+
 class final_shop extends shop {
 
     function createItems()

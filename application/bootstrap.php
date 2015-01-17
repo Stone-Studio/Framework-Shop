@@ -1,5 +1,5 @@
 <?php
-
+//by Sergeev
 include_once('core/model.php');
 include_once('core/view.php');
 include_once('core/controller.php');
