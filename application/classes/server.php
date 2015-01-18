@@ -3,6 +3,7 @@
 class server {
 
     function getIp() {
+        //получение ip
 
         $ip = $_SERVER['HTTP_CLIENT_IP'];
 

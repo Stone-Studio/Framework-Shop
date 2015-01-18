@@ -32,13 +32,13 @@ class route
         //создаем путь к контролеру
 
 		if(file_exists($model_path)) {
-			include_once ("application/models/".$model_file);
+			include_once ("models/".$model_file);
 		} else {
             Route::error404();
         }
 
 		if(file_exists($controller_path)) {
-			include_once ("application/controllers/".$controller_file);
+			include_once ("controllers/".$controller_file);
 		} else {
 			Route::error404();
 		}
@@ -58,7 +58,7 @@ class route
 	
 	}
 
-	function error404() {
+	static function error404() {
         //ошибка 404
         $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
         header('HTTP/1.1 404 Not Found');

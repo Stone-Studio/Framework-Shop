@@ -11,7 +11,7 @@
 	</head>
 	<body>
 	<?php
-		include_once('application/views/'.$content_view);
+		include_once('main_view.php');
 	?>
 	</body>
 </html>

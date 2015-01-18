@@ -3,6 +3,7 @@
 class string {
 
     function explodeRequest($string) {
+        //разбивает строку на слова (признак: ' ')
 
         if(!empty($string)) {
             $explodeString = explode(' ', $string);
@@ -15,6 +16,7 @@ class string {
 
     function replacePointOnSpace($string)
     {
+        //заменяет запятые на пробелы
 
         if (!empty($string)) {
             $replaceString = str_repeat(',', ' ');
@@ -27,6 +29,7 @@ class string {
     }
 
     function cutString($string, $start, $cut) {
+        //обрезает строку
 
         if(!empty($string)){
 

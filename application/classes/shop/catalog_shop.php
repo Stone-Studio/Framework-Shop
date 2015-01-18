@@ -1,5 +1,7 @@
 <?php
 
+include_once('shop.php');
+
 //by Sergeev
 class catalog_shop extends shop {
 

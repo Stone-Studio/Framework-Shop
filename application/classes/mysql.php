@@ -9,7 +9,10 @@ class mysql {
 
     function connect() {
 
-    mysqli_connect($this->host, $this->user, $this->password, $this->base);
+        mysqli_connect('mysql.hostinger.ru', 'u154891117_dev', 'cfkfn2002', 'u154891117_dev') || die ('Ошибка');
+        //подключение к базе данных
+
+        //TODO: Вывод данных для подключения в переменные
 
     }
 

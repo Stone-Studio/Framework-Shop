@@ -17,6 +17,8 @@
  * FITNESS FOR A PARTICULAR PURPOSE.
  */
 
+//АВТОРСКИЕ ПРАВА НА ДАННЫЙ ФАЙЛ ПРИНАДЛЕЖАТ УКАЗАННОМУ НИЖЕ РАЗРАБОТЧИКУ
+
 /**
  * PHPMailer RFC821 SMTP email transport class.
  * Implements RFC 821 SMTP commands and provides some utility methods for sending mail to an SMTP server.

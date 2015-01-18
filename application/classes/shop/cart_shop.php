@@ -1,9 +1,14 @@
 <?php
 //by Sergeev
 
-class cart_shop extends shop {
+include_once('shop.php');
+//подключение главного класса
+
+class cart_shop extends shop{
 
     function countProducts() {
+        //пересчет кол-ва продуктов в магазине
+
         $count = count($_SESSION['BUSKET']);
 
         if(is_numeric($count)){
@@ -15,12 +20,15 @@ class cart_shop extends shop {
     }
 
     function generateCart() {
+            //генерация корзины, массив
+
             $busket = $_SESSION['BUSKET'];
 
             return $busket;
     }
 
     function addToCart() {
+        //получение параментров, добавление в корзину
 
         $id = $_GET['id'];
         $cost = $_GET['cost'];
@@ -34,6 +42,8 @@ class cart_shop extends shop {
             //задаем значения массиву товара
 
             if ($_SESSION['BUSKET'][$id]) {
+                //контроль за кол-вом добавленного товара
+
                 $count = $_SESSION['BUSKET'][$id]['count'];
                 $count++;
             } else {
@@ -44,10 +54,13 @@ class cart_shop extends shop {
     }
 
     function clearCart() {
+        //получение идентификатора
 
         $clear = $_GET['clear'];
 
         if($clear = 'yes'){
+            //очистка массива если передано yes
+
             $_SESSION['BUSKET'] = array();
         } else {
             exit();

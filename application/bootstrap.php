@@ -2,10 +2,10 @@
 
 //by Sergeev
 
-include_once('core/model.php');
-include_once('core/view.php');
-include_once('core/controller.php');
-include_once ('core/route.php');
+include_once('model.php');
+include_once('view.php');
+include_once('controller.php');
+include_once('route.php');
 
 include_once('classes/shop/cart_shop.php');
 include_once('classes/shop/catalog_shop.php');
@@ -25,10 +25,16 @@ $shop = new shop();
 $captcha = new captcha();
 $mail = new SMTP();
 $file = new file();
-$mysql = new mysql();
 $server = new server();
 $string = new string();
 
 route::start();
+
+//$cart_shop->addToCart();
+//$cart_shop->generateCart();
+//$cart_shop->countProducts();
+//$cart_shop->clearCart();
+//$final_shop->createItems($mysql);
+//$final_shop->createOrder($mysql);
 
 //тут методы общие для всего приложения

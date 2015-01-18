@@ -51,6 +51,7 @@ class file {
     }
 
     function getFileInfo($file) {
+        //получение данных о файле
 
         if(is_file($file)) {
 
